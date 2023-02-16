@@ -1,0 +1,29 @@
+{
+  "name": "easybankmaster",
+  "version": "1.0.0",
+  "description": "project clone of frontend mentor",
+  "main": "model.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/mobile.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HernanAlvarado12/easyBankMaster.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwindcss",
+    "vanillajs",
+    "frontend"
+  ],
+  "author": "Hernan Alvarado <hernanvid123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HernanAlvarado12/easyBankMaster/issues"
+  },
+  "homepage": "https://github.com/HernanAlvarado12/easyBankMaster#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
