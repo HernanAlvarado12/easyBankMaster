@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './model.js'],
+  future: {
+    hoverOnlyWhenSupported: true
+  },
   theme: {
     extend: {
       screens: {
@@ -17,13 +20,14 @@ module.exports = {
         '6': '6rem',
         '8': '8rem',
         '10': '10rem',
+        '15': '15rem',
         '50': '50%',
         '85': '85%',
         '90': '90%'
       },
       fontSize: {
-        'xs': '1.2rem',
-        'sm': '1.4rem',
+        'xs': '1.4rem',
+        'sm': '1.6rem',
         'md': '1.8rem',
         'lg': '2.4rem',
         'base': '3.2rem',
@@ -41,7 +45,7 @@ module.exports = {
         blue: {
           DEFAULT: 'hsl(233, 26%, 24%)',
           '100': 'hsl(220, 16%, 96%)',
-          '200': 'hsl(233, 26%, 24%)'
+          '200': 'hsl(233, 8%, 62%)'
         },
         'green': 'hsl(136, 65%, 51%)',
         'cyan': 'hsl(192, 70%, 51%)',
