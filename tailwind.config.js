@@ -50,6 +50,9 @@ module.exports = {
         'green': 'hsl(136, 65%, 51%)',
         'cyan': 'hsl(192, 70%, 51%)',
         'gray': 'hsl(0, 0%, 98%)'
+      },
+      boxShadow: {
+        'sm': '0 0.3rem 1rem 0.1rem hsl(0, 0%, 60%)'
       }
     },
   },
