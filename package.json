@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/HernanAlvarado12/easyBankMaster.git"
   },
+  "type": "module",
   "keywords": [
     "html",
     "css",

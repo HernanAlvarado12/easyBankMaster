@@ -27,7 +27,16 @@
             <nav class ="w-full fixed z-10 bg-white">
                 <figure class ="w-90 h-8 mx-auto flex items-center justify-between">
                     <img src ="./assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
-                    <img src ="./assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
+                    <img class ="cursor-pointer" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
+                    <menu class ="w-90 py-4 n-menu absolute origin-top scale-0 top-10 transition-all duration-700 rounded-sm shadow-sm bg-white">
+                        <ul class ="min-h-full flex flex-col items-center gap-y-2">
+                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Home</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">About</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Contact</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Blog</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Careers</a></li>
+                        </ul>
+                    </menu>
                 </figure>
             </nav>
         </header>
@@ -46,7 +55,7 @@
                 </p>
                 <button class ="w-[17rem] h-4 text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan">Request invite</button>
             </article>
-            <section class ="my-15 flex flex-col gap-y-2">
+            <section class ="my-15 flex flex-col gap-y-4">
                 <article class ="text-center">
                     <h2 class ="text-base text-blue">Why choose Easybank?</h2>
                     <p class ="mt-2 mb-3 text-md text-blue-200 font-light">
@@ -54,7 +63,7 @@
                         your finances like never before.
                     </p>
                 </article>
-                <template>
+                <template id ="chooseTemplate">
                     <article class ="text-center">
                         <img class ="mx-auto" alt ="icon image" loading ="lazy" draggable ="false">
                         <h2 class ="my-2 text-lg text-blue">Online Banking</h2>
@@ -65,9 +74,9 @@
                     </article>
                 </template>
             </section>
-            <section id ="sectionLatest">
+            <section class ="mb-8">
                 <h2 class ="mb-4 text-center text-base text-blue">Latest Articles</h2>
-                <section class ="flex flex-col">
+                <section class ="flex flex-col gap-y-2">
                     <article>
                         <template id ="latestTemplate">
                             <img class ="rounded-t-sm" id ="articleLastest" alt ="picture" loading ="lazy" draggable ="false">
@@ -110,6 +119,7 @@
             </section>
         </footer>
 
+        <script src ="./model.js" type ="module"></script>
     </body>
 
 </html>
