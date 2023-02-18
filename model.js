@@ -3,7 +3,7 @@ import { choose, latest } from './data.js'
 const iconMenu = document.getElementById('iconMenu')
 const latestFragment = document.createDocumentFragment()
 const chooseFragment = document.createDocumentFragment()
-const menu = document.querySelector('header > nav menu.w-90.absolute')
+const menu = document.querySelector('header > nav menu.w-full.absolute')
 const latestTemplate = document.getElementById('latestTemplate').content
 const chooseTemplate = document.getElementById('chooseTemplate').content
 

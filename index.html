@@ -25,18 +25,19 @@
         
         <header>
             <nav class ="w-full fixed z-10 bg-white">
-                <figure class ="w-90 h-8 mx-auto flex items-center justify-between">
+                <figure class ="w-90 h-8 mx-auto flex items-center justify-between relative">
                     <img src ="./assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
-                    <img class ="cursor-pointer" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
-                    <menu class ="w-90 py-4 n-menu absolute origin-top scale-0 top-10 transition-all duration-700 rounded-sm shadow-sm bg-white">
-                        <ul class ="min-h-full flex flex-col items-center gap-y-2">
-                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Home</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">About</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Contact</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Blog</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover" href ="#">Careers</a></li>
+                    <img class ="any-hover sm:hidden" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
+                    <menu class ="w-full py-4 n-menu absolute origin-top scale-0 top-10 transition-all duration-700 rounded-sm shadow-sm bg-white sm:w-auto sm:p-0 sm:relative sm:top-0 sm:scale-100 sm:shadow-none">
+                        <ul class ="min-h-full flex flex-col items-center gap-y-2 sm:flex-row sm:gap-x-3">
+                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Home</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">About</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Contact</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Blog</a></li>
+                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Careers</a></li>
                         </ul>
                     </menu>
+                    <button class ="w-[17rem] h-4 hidden text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan sm:block">Request invite</button>
                 </figure>
             </nav>
         </header>
