@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     * {
         box-sizing: border-box;
@@ -20,6 +19,7 @@
     }
 
     body::-webkit-scrollbar-thumb {
+        height: 15rem;
         border-radius: 1rem;
         background: linear-gradient(to bottom, hsl(192, 70%, 51%), 60%, hsl(136, 65%, 61%));
     }
