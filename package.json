@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/HernanAlvarado12/easyBankMaster#readme",
   "devDependencies": {
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.2.7"
   }
 }
-
