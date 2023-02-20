@@ -22,6 +22,7 @@ module.exports = {
         '8': '8rem',
         '10': '10rem',
         '15': '15rem',
+        '30': '30vw',
         '50': '50%',
         '85': '85%',
         '90': '90%'
@@ -57,6 +58,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp')
+  ],
 }
 
