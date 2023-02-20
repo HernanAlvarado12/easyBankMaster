@@ -21,54 +21,73 @@
         <link rel ="stylesheet" href ="./css/tailwind.css">
     </head>
 
-    <body>
+    <body class ="sm:overflow-x-hidden">
         
         <header>
-            <nav class ="w-full fixed z-10 bg-white">
+            <nav class ="w-full fixed top-0 z-10 bg-white">
                 <figure class ="w-90 h-8 mx-auto flex items-center justify-between relative">
                     <img src ="./assets/logo.svg" alt ="icon logo" loading ="lazy" draggable ="false">
                     <img class ="any-hover sm:hidden" id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu" loading ="lazy" draggable ="false">
                     <menu class ="w-full py-4 n-menu absolute origin-top scale-0 top-10 transition-all duration-700 rounded-sm shadow-sm bg-white sm:w-auto sm:p-0 sm:relative sm:top-0 sm:scale-100 sm:shadow-none">
                         <ul class ="min-h-full flex flex-col items-center gap-y-2 sm:flex-row sm:gap-x-3">
-                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Home</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">About</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Contact</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Blog</a></li>
-                            <li><a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Careers</a></li>
+                            <li class ="group relative">
+                                <a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200 hover:text-black" href ="#">Home</a>
+                                <span class ="w-full h-0.5 block translate-y-[2.8rem] scale-x-0 transition-all duration-500 bg-gradient-to-r from-green to-cyan group-hover:scale-x-100"></span>
+                            </li>
+                            <li class ="group relative">
+                                <a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">About</a>
+                                <span class ="w-full h-0.5 block translate-y-[2.8rem] scale-x-0 transition-all duration-500 bg-gradient-to-r from-green to-cyan group-hover:scale-x-100"></span>
+                            </li>
+                            <li class ="group relative">
+                                <a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Contact</a>
+                                <span class ="w-full h-0.5 block translate-y-[2.8rem] scale-x-0 transition-all duration-500 bg-gradient-to-r from-green to-cyan group-hover:scale-x-100"></span>
+                            </li>
+                            <li class ="group relative">
+                                <a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Blog</a>
+                                <span class ="w-full h-0.5 block translate-y-[2.8rem] scale-x-0 transition-all duration-500 bg-gradient-to-r from-green to-cyan group-hover:scale-x-100"></span>
+                            </li>
+                            <li class ="group relative">
+                                <a class ="text-blue text-md font-semibold any-hover sm:text-sm sm:text-blue-200" href ="#">Careers</a>
+                                <span class ="w-full h-0.5 block translate-y-[2.8rem] scale-x-0 transition-all duration-500 bg-gradient-to-r from-green to-cyan group-hover:scale-x-100"></span>
+                            </li>
                         </ul>
                     </menu>
-                    <button class ="w-[17rem] h-4 hidden text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan sm:block">Request invite</button>
+                    <button class ="w-[17rem] h-4 hidden text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan sm:block any-hover hover:opacity-50">Request invite</button>
                 </figure>
             </nav>
         </header>
 
-        <main class ="w-90 mx-auto">
-            <picture class ="relative">
-                <source media ="(min-width: 900px)" srcset ="./assets/intro-desktop.svg">
-                <img class ="w-full" src ="./assets/intro-mobile.svg" alt ="picture" loading ="lazy" draggable ="false">
-                <img class ="absolute top-[-30%]" src ="./assets/mockups.png" alt ="mockups image" loading ="lazy" draggable ="false">
-            </picture>
-            <article class ="text-center">
-                <h1 class ="text-xl text-blue font-light">Next generation digital banking</h1>
-                <p class ="mt-2 mb-3 text-md text-blue-200 font-light">
-                    Take your financial life online. Your Easybank account will be a one-stop-shop for 
-                    spending, saving, budgeting, investing, and much more.
-                </p>
-                <button class ="w-[17rem] h-4 text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan">Request invite</button>
-            </article>
-            <section class ="my-15 flex flex-col gap-y-4">
-                <article class ="text-center">
-                    <h2 class ="text-base text-blue">Why choose Easybank?</h2>
+        <main class ="w-90 mx-auto sm:mt-10">
+            <section class ="sm:h-[70vh] sm:grid sm:grid-cols-2 sm:items-center">
+                <figure class ="relative sm:order-1 sm:right-[-10vh]">
+                    <picture class ="w-[70vw] block">
+                        <source media ="(min-width: 900px)" srcset ="./assets/intro-desktop.svg">
+                        <img class ="w-full sm:relative sm:top-[-15vmax] sm:left-[-10vw]" src ="./assets/intro-mobile.svg" alt ="picture" loading ="lazy" draggable ="false">
+                    </picture>
+                    <img class ="absolute top-[-30%] sm:top-[-15%]" src ="./assets/mockups.png" alt ="mockups image" loading ="lazy" draggable ="false">
+                </figure>
+                <article class ="text-center sm:max-w-4xl sm:text-start">
+                    <h1 class ="text-xl text-blue font-light">Next generation digital banking</h1>
                     <p class ="mt-2 mb-3 text-md text-blue-200 font-light">
+                        Take your financial life online. Your Easybank account will be a one-stop-shop for 
+                        spending, saving, budgeting, investing, and much more.
+                    </p>
+                    <button class ="w-[17rem] h-4 text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan any-hover hover:opacity-50">Request invite</button>
+                </article>
+            </section>
+            <section class ="my-15 flex flex-col gap-y-4 sm:grid sm:grid-cols-4 sm:gap-x-2">
+                <article class ="text-center sm:col-start-1 sm:col-end-5 sm:text-start">
+                    <h2 class ="text-base text-blue">Why choose Easybank?</h2>
+                    <p class ="max-w-5xl mt-2 mb-3 text-md text-blue-200 font-light sm:mb-5">
                         We leverage Open Banking to turn your bank account into your financial hub. Control
                         your finances like never before.
                     </p>
                 </article>
                 <template id ="chooseTemplate">
-                    <article class ="text-center">
-                        <img class ="mx-auto" alt ="icon image" loading ="lazy" draggable ="false">
+                    <article class ="text-center sm:text-start">
+                        <img class ="mx-auto sm:m-0" alt ="icon image" loading ="lazy" draggable ="false">
                         <h2 class ="my-2 text-lg text-blue">Online Banking</h2>
-                        <p class ="text-md text-blue-200 font-light">
+                        <p class ="text-md text-blue-200 font-light sm:text-sm sm:line-clamp-4 sm:text-justify">
                             Our modern web and mobile applications allow you to keep 
                             track of your finances  wherever you are in the world.
                         </p>
@@ -77,19 +96,19 @@
             </section>
             <section class ="mb-8">
                 <h2 class ="mb-4 text-center text-base text-blue">Latest Articles</h2>
-                <section class ="flex flex-col gap-y-2">
-                    <article>
-                        <template id ="latestTemplate">
-                            <img class ="rounded-t-sm" id ="articleLastest" alt ="picture" loading ="lazy" draggable ="false">
-                            <div class ="p-3 text-blue-200 font-light">
-                                <p class ="text-xs"></p>
-                                <h3 class ="text-lg text-blue font-normal">Receive money in any currencty with no feed</h3>
-                                <p class ="text-md">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint debitis expedita 
+                <section class ="flex flex-col gap-y-2 sm:grid sm:grid-cols-4 sm:gap-x-2">           
+                    <template id ="latestTemplate">
+                        <article>
+                            <img class ="rounded-t-sm  sm:aspect-video" id ="articleLastest" alt ="picture" loading ="lazy" draggable ="false">
+                            <div class ="p-3 text-blue-200 font-light sm:p-1.5">
+                                <p class ="text-xs sm:text-[1.2rem]"></p>
+                                <h3 class ="text-lg text-blue font-normal sm:text-md any-hover hover:text-green">Receive money in any currencty with no feed</h3>
+                                <p class ="text-md sm:text-xs sm:text-justify sm:tracking-tight sm:line-clamp-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint debitis expedita 
                                     dignissimos aut veniam doloribus accusamus assumenda? Nihil optio, officiis 
                                 </p>
                             </div>
-                        </template>
-                    </article>
+                        </article>
+                    </template>
                 </section>
             </section>
         </main>
@@ -108,14 +127,14 @@
                     <img class ="w-3 h-3" src ="./assets/instagram.svg" alt ="icon company" loading ="lazy" draggable ="false">
                 </figure>
                 <ul class ="my-1.5 flex flex-col items-center gap-y-1">
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">About Us</a></li>
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">Contact</a></li>
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">Blog</a></li>
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">Careers</a></li>
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">Support</a></li>
-                    <li><a class ="text-md text-blue-100 font-normal" href ="#">Privacy Policy</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">About Us</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">Contact</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">Blog</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">Careers</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">Support</a></li>
+                    <li><a class ="text-md text-blue-100 font-normal any-hover hover:text-green" href ="#">Privacy Policy</a></li>
                 </ul>
-                <button class ="w-[17rem] h-4 text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan">Request invite</button>
+                <button class ="w-[17rem] h-4 text-md text-white font-bold rounded-full bg-gradient-to-r from-green to-cyan any-hover hover:opacity-50">Request invite</button>
                 <p class ="text-blue-200 text-sm">© Easybank. All Rights Reserved</p>
             </section>
         </footer>
